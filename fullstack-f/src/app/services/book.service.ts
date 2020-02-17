@@ -8,6 +8,7 @@ import { Observable } from 'rxjs';
 export class BookService {
     url='http://localhost:3000/book/';
     books: object[];
+    bookChoosen: object[];
     
   
   
@@ -30,5 +31,12 @@ export class BookService {
         return this.books
   
      }
+
+     locateBook(bookChoose:any):object{
+      
+      this.bookChoosen = bookChoose;
+      
+      return;
+   }
 
   }

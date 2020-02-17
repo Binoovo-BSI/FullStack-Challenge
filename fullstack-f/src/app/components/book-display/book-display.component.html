@@ -1,8 +1,14 @@
-<!-- <div class="title">Books</div>  -->
-    
-        <div class="card" *ngFor="let book of bookService.getBooks()">
-            <a routerLink="/book-detail" routerLinkActive="active-link">
+
+    <div class="booksContainer">
+        <div class="card" routerLink="/detail" routerLinkActive="active-link" (click)="bookService.locateBook(book)" *ngFor="let book of bookService.getBooks()">
+            <!-- <a class="link" routerLink="/detail" routerLinkActive="active-link" (click)="bookService.locateBook(book)"> -->
                 {{book.name}}
-            </a>
-        
+            <!-- </a> -->
         </div>
+        <div class="buttonAddBook">
+            <button class="addButton" routerLink="/addBook" routerLinkActive="active-link">
+                New book!
+            </button>
+        </div>
+    </div>
+        

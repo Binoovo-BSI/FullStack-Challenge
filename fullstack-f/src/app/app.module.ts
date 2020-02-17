@@ -5,12 +5,16 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BookDetailComponent } from './components/book-detail/book-detail.component';
+import { AddBookComponent } from './components/add-book/add-book.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    BookDisplayComponent
+    BookDetailComponent,
+    BookDisplayComponent,
+    AddBookComponent
   ],
   imports: [
     BrowserModule,

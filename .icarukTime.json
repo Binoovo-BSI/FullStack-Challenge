@@ -1,16 +1,16 @@
 {
-    "idleHeartbeats": 4578,
-    "navigatingHeartbeats": 1953,
-    "totalCodingHeartbeats": 8250,
+    "idleHeartbeats": 5226,
+    "navigatingHeartbeats": 2266,
+    "totalCodingHeartbeats": 9827,
     "languageHeartbeats": {
         "json": 29,
         "ignore": 1,
         "javascript": 4651,
-        "typescript": 2534,
+        "typescript": 2885,
         "http": 773,
-        "plaintext": 38,
-        "scss": 57,
-        "html": 167
+        "plaintext": 73,
+        "scss": 734,
+        "html": 681
     },
     "fileHeartbeats": {
         "fullstack-b/package.json": 29,
@@ -37,13 +37,17 @@
         "fullstack-b/models/author.js": 60,
         "fullstack-b/models/library.js": 434,
         "fullstack-b/test.rest": 773,
-        "scm\\git\\scm0\\input": 38,
+        "scm\\git\\scm0\\input": 73,
         "fullstack-f/src/styles.scss": 57,
         "fullstack-f/src/app/app.component.html": 31,
-        "fullstack-f/src/app/app.module.ts": 307,
-        "fullstack-f/src/app/app-routing.module.ts": 43,
-        "fullstack-f/src/app/components/book-display/book-display.component.html": 136,
-        "fullstack-f/src/app/services/book.service.ts": 263,
-        "fullstack-f/src/app/components/book-display/book-display.component.ts": 127
+        "fullstack-f/src/app/app.module.ts": 319,
+        "fullstack-f/src/app/app-routing.module.ts": 191,
+        "fullstack-f/src/app/components/book-display/book-display.component.html": 391,
+        "fullstack-f/src/app/services/book.service.ts": 354,
+        "fullstack-f/src/app/components/book-display/book-display.component.ts": 127,
+        "fullstack-f/src/app/components/book-detail/book-detail.component.ts": 100,
+        "fullstack-f/src/app/components/book-detail/book-detail.component.html": 259,
+        "fullstack-f/src/app/components/book-detail/book-detail.component.scss": 264,
+        "fullstack-f/src/app/components/book-display/book-display.component.scss": 413
     }
 }
