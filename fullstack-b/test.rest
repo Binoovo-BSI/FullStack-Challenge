@@ -1,0 +1,15 @@
+@url = http://localhost:3000
+
+// Show all authors
+GET {{url}}/author/all
+###
+
+// Register author
+POST {{url}}/author/add
+Content-Type:application/json
+
+{
+	"firstName": "Antonio",
+	"lastName": "Ochando"
+}
+###
