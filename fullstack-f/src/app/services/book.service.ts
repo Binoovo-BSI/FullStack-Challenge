@@ -1,0 +1,34 @@
+import { Injectable } from '@angular/core';
+import { HttpClient} from '@angular/common/http';
+import { Observable } from 'rxjs';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class BookService {
+    url='http://localhost:3000/book/';
+    books: object[];
+    
+  
+  
+    constructor(private httpClient:HttpClient) { }
+  
+     getDisplayBooks():Observable<any>{
+        
+        return this.httpClient.get(this.url + `all`);
+    
+     }
+
+     setBooks(books:object[]):void{
+      
+        this.books=books
+  
+     }
+
+     getBooks():object{
+      
+        return this.books
+  
+     }
+
+  }

@@ -1,0 +1,8 @@
+<!-- <div class="title">Books</div>  -->
+    
+        <div class="card" *ngFor="let book of bookService.getBooks()">
+            <a routerLink="/book-detail" routerLinkActive="active-link">
+                {{book.name}}
+            </a>
+        
+        </div>
