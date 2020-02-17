@@ -1,20 +1,50 @@
 @url = http://localhost:3000
 @id = 5e4ae2931c9d440000ba7a28
+@bookId= 5e4afabba251fb4ca8f59da4
+
+// -----------------
+// A U T H O R S
+// -----------------
 
 // Show all authors
 GET {{url}}/author/all
 ###
 
-// Ver datos del usuario
+// Show author data
 GET {{url}}/author/{{id}}
 ###
 
-// Register author
+// Register new author
 POST {{url}}/author/add
 Content-Type:application/json
 
 {
 	"firstName": "Antonio",
 	"lastName": "Ochando"
+}
+###
+
+// -----------------
+// B O O K S
+// -----------------
+
+// Show all books
+GET {{url}}/book/all
+###
+
+// Show book data
+GET {{url}}/book/{{bookId}}
+###
+
+// Register new book
+POST {{url}}/book/add
+Content-Type:application/json
+
+{
+	"name": "Dialogos",
+	"isbn": "9788428213615",
+    "author_Id": "{{id}}",
+    "author_Name": "Antonio",
+    "author_Surname": "Ochando"
 }
 ###

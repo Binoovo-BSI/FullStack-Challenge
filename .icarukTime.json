@@ -1,20 +1,21 @@
 {
-    "idleHeartbeats": 3302,
-    "navigatingHeartbeats": 1325,
-    "totalCodingHeartbeats": 5999,
+    "idleHeartbeats": 3930,
+    "navigatingHeartbeats": 1600,
+    "totalCodingHeartbeats": 7271,
     "languageHeartbeats": {
         "json": 29,
         "ignore": 1,
-        "javascript": 3786,
+        "javascript": 4636,
         "typescript": 1794,
-        "http": 389
+        "http": 773,
+        "plaintext": 38
     },
     "fileHeartbeats": {
         "fullstack-b/package.json": 29,
         ".gitignore": 1,
         "fullstack-b/DB/db_init.js": 281,
         "fullstack-b/app.js": 389,
-        "fullstack-b/routes/rt_book.js": 333,
+        "fullstack-b/routes/rt_book.js": 403,
         "fullstack-b/models/Author.js": 422,
         "fullstack-b/interfaces/author.ts": 20,
         "fullstack-b/schemas/author.ts": 120,
@@ -23,16 +24,17 @@
         "fullstack-b/interfaces/interfaces.ts": 180,
         "fullstack-b/models/Book.ts": 129,
         "fullstack-b/interfaces/IBook.ts": 154,
-        "fullstack-b/DB/db_book.js": 496,
-        "fullstack-b/routes/rt_author.js": 389,
+        "fullstack-b/DB/db_book.js": 783,
+        "fullstack-b/routes/rt_author.js": 465,
         "fullstack-b/DB/db_authors.js": 40,
-        "fullstack-b/DB/db_author.js": 878,
+        "fullstack-b/DB/db_author.js": 1098,
         "fullstack-b/models/Book.js": 261,
         "fullstack-b/models/book.ts": 20,
         "fullstack-b/models/author.ts": 56,
         "fullstack-b/DB/db_author.ts": 47,
         "fullstack-b/models/author.js": 60,
-        "fullstack-b/models/library.js": 237,
-        "fullstack-b/test.rest": 389
+        "fullstack-b/models/library.js": 434,
+        "fullstack-b/test.rest": 773,
+        "scm\\git\\scm0\\input": 38
     }
 }

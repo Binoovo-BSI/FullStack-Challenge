@@ -1,12 +1,12 @@
 const router = require ("express").Router();
-const { allBooks } = require("../DB/db_book");
+const { allBooks, getById, addBook } = require("../DB/db_book");
 
 
 //get
-router.get("/books/all", allBooks);
-//router.get("/book/{{id}}/", getById);
+router.get("/book/all", allBooks);
+router.get("/book/:id", getById);
 
 //post
-//router.post("/book/", addBook);
+router.post("/book/add", addBook);
 
 module.exports = router;
