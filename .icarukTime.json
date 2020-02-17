@@ -1,0 +1,13 @@
+{
+    "idleHeartbeats": 25,
+    "navigatingHeartbeats": 21,
+    "totalCodingHeartbeats": 19,
+    "languageHeartbeats": {
+        "json": 18,
+        "ignore": 1
+    },
+    "fileHeartbeats": {
+        "fullstack-b/package.json": 18,
+        ".gitignore": 1
+    }
+}
