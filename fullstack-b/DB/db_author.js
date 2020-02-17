@@ -12,6 +12,20 @@ const allAuthors = async (req, res) => {
     
 };
 
+const authorId = async (req, res) => {
+
+    let id = req.params.id;
+
+    AuthorModel.findById(
+		id
+	).then( (authors) => {
+		res.send(authors);
+	}).catch( (err) => {
+		console.log( err );
+    });
+    
+};
+
 const addAuthor = async (req, res) => {
 
     try {
@@ -52,5 +66,6 @@ const addAuthor = async (req, res) => {
 
 module.exports = {
     allAuthors,
+    authorId,
     addAuthor
 };

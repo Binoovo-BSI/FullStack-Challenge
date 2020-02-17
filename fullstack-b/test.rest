@@ -1,7 +1,12 @@
 @url = http://localhost:3000
+@id = 5e4ae2931c9d440000ba7a28
 
 // Show all authors
 GET {{url}}/author/all
+###
+
+// Ver datos del usuario
+GET {{url}}/author/{{id}}
 ###
 
 // Register author

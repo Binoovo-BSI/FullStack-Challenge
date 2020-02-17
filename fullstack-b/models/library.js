@@ -4,10 +4,10 @@ const mongoose = require("mongoose");
 const AuthorSchema = mongoose.Schema({
 	
 	firstName: {
-		type: Array
+		type: String
 	},
 	lastName: {
-		type: Array
+		type: String
 	}
 	
 });
@@ -15,10 +15,10 @@ const AuthorSchema = mongoose.Schema({
 const BookSchema = mongoose.Schema({
 	
 	name: {
-		type: Array
+		type: String
 	},
 	isbn: {
-		type: Array
+		type: String
 	},
 	author: [AuthorSchema]
 	
