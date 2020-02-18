@@ -1,9 +1,7 @@
 
     <div class="booksContainer">
         <div class="card" routerLink="/detail" routerLinkActive="active-link" (click)="bookService.locateBook(book)" *ngFor="let book of bookService.getBooks()">
-            <!-- <a class="link" routerLink="/detail" routerLinkActive="active-link" (click)="bookService.locateBook(book)"> -->
-                {{book.name}}
-            <!-- </a> -->
+            {{book.name}}
         </div>
         <div class="buttons">
             

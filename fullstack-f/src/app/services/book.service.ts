@@ -10,9 +10,6 @@ export class BookService {
     books: object[];
     bookChoosen: object[];
     
-    
-  
-  
     constructor(private httpClient:HttpClient) { }
   
      getDisplayBooks():Observable<any>{
