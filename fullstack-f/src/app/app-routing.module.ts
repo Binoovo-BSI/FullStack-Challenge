@@ -13,7 +13,7 @@ const routes: Routes = [
   {path:"display", component:BookDisplayComponent},
   {path:"detail", component:BookDetailComponent},
   {path:"addBook", component:AddBookComponent},
-  {path:"addAuthor", component:AddAuthorComponent}
+  {path:"addAuthor", component:AddAuthorComponent},
   {path:"detailAuthor", component:AuthorDetailComponent}
   
 ];
