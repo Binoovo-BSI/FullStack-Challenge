@@ -12,6 +12,7 @@ export class AddAuthorComponent implements OnInit {
     firstName: '',
     lastName: ''
   };
+  msgError = "";
 
   constructor(private authorService:AuthorService, private router:Router) { }
 
@@ -29,15 +30,15 @@ export class AddAuthorComponent implements OnInit {
   }
 
   sendRegis(){
-    
+
+    if (this.authorRegist.firstName != "" && this.authorRegist.lastName != ""){
+
     this.authorService.regAuthor(this.authorRegist)
     .subscribe(
       
       (res) => { 
 
         
-          
-          
           setTimeout(() => {
             this.router.navigate(['/'])
           }, 1000);
@@ -46,6 +47,14 @@ export class AddAuthorComponent implements OnInit {
       error=>console.log(error)
 
     )
+
+    }else{
+
+      this.msgError = "Debes de rellenar los dos campos";
+
+    }
+    
+    
   }
 
 }

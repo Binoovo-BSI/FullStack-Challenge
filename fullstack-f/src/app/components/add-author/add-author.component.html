@@ -9,6 +9,9 @@
     <div class="authorSurname">
         <p>Surname: </p><input type="text" class="input" [(ngModel)] = "authorRegist.lastName" [ngModelOptions] = "{standalone: true }"/>
     </div>
+    <div class="errorContainer">
+        {{msgError}}
+    </div>
     <div class="buttons">
         <div class="buttonAddContainer">
             <button class="addButton" routerLink="/display" routerLinkActive="active-link">

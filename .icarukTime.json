@@ -1,16 +1,16 @@
 {
-    "idleHeartbeats": 6418,
-    "navigatingHeartbeats": 3011,
-    "totalCodingHeartbeats": 12410,
+    "idleHeartbeats": 6825,
+    "navigatingHeartbeats": 3160,
+    "totalCodingHeartbeats": 13239,
     "languageHeartbeats": {
         "json": 29,
         "ignore": 1,
         "javascript": 5096,
-        "typescript": 3826,
+        "typescript": 4397,
         "http": 773,
         "plaintext": 147,
-        "scss": 1179,
-        "html": 1359
+        "scss": 1228,
+        "html": 1568
     },
     "fileHeartbeats": {
         "fullstack-b/package.json": 29,
@@ -43,19 +43,20 @@
         "fullstack-f/src/app/app.module.ts": 340,
         "fullstack-f/src/app/app-routing.module.ts": 329,
         "fullstack-f/src/app/components/book-display/book-display.component.html": 487,
-        "fullstack-f/src/app/services/book.service.ts": 385,
+        "fullstack-f/src/app/services/book.service.ts": 489,
         "fullstack-f/src/app/components/book-display/book-display.component.ts": 127,
         "fullstack-f/src/app/components/book-detail/book-detail.component.ts": 158,
         "fullstack-f/src/app/components/book-detail/book-detail.component.html": 300,
         "fullstack-f/src/app/components/book-detail/book-detail.component.scss": 264,
         "fullstack-f/src/app/components/book-display/book-display.component.scss": 530,
-        "fullstack-f/src/app/components/add-author/add-author.component.html": 420,
-        "fullstack-f/src/app/components/add-author/add-author.component.scss": 248,
+        "fullstack-f/src/app/components/add-author/add-author.component.html": 448,
+        "fullstack-f/src/app/components/add-author/add-author.component.scss": 297,
         "fullstack-f/src/app/services/author.service.ts": 174,
-        "fullstack-f/src/app/components/add-author/add-author.component.ts": 395,
-        "fullstack-f/src/app/components/author-detail/author-detail.component.ts": 98,
-        "fullstack-f/src/app/components/author-detail/author-detail.component.html": 121,
+        "fullstack-f/src/app/components/add-author/add-author.component.ts": 575,
+        "fullstack-f/src/app/components/author-detail/author-detail.component.ts": 357,
+        "fullstack-f/src/app/components/author-detail/author-detail.component.html": 302,
         "fullstack-f/src/app/components/author-detail/author-detail.component.scss": 80,
-        "fullstack-f/src/app/models/author.model.ts": 26
+        "fullstack-f/src/app/models/author.model.ts": 26,
+        "fullstack-f/src/app/models/book.model.ts": 28
     }
 }

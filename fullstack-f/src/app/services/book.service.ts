@@ -10,6 +10,7 @@ export class BookService {
     books: object[];
     bookChoosen: object[];
     
+    
   
   
     constructor(private httpClient:HttpClient) { }
@@ -38,5 +39,10 @@ export class BookService {
       
       return;
    }
+
+   regBook(regis_d:any):Observable<any>{
+    
+      return this.httpClient.post(this.url + `add`, regis_d);
+    }
 
   }
