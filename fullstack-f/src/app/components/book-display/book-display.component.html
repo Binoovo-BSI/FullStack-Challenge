@@ -1,0 +1,21 @@
+
+    <div class="booksContainer">
+        <div class="card" routerLink="/detail" routerLinkActive="active-link" (click)="bookService.locateBook(book)" *ngFor="let book of bookService.getBooks()">
+            {{book.name}}
+        </div>
+        <div class="buttons">
+            
+            <div class="buttonAddContainer">
+                <button class="addButton" routerLink="/addAuthor" routerLinkActive="active-link">
+                    Authors
+                </button>
+            </div>
+        </div>
+        <div class="searchBar">
+            <p class="pText">Search your favourite book!</p>
+            <input class="input" type="text" name="" id=""  (keyup)="searchMovie($event)">
+            
+        </div>
+        
+    </div>
+        

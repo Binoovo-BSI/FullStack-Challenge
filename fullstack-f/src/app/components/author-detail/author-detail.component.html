@@ -1,0 +1,26 @@
+
+<div class="authorDetailContainer">
+    <p>{{dispChoosenAuthor.firstName}} {{dispChoosenAuthor.lastName}}</p>
+    
+    <div class="bookName">
+        <p>Title: </p><input  type="text" class="input" [(ngModel)] = "bookRegist.name" [ngModelOptions] = "{standalone: true }"/>
+    </div>
+    <div class="bookIsbn">
+        <p>Isbn: </p><input  type="text" class="input" [(ngModel)] = "bookRegist.isbn" [ngModelOptions] = "{standalone: true }"/>
+    </div>
+    <div class="errorContainer">
+        {{msgError}}
+    </div>
+    <div class="buttons">
+        <div class="buttonAddContainer">
+            <button class="retButton" routerLink="/addAuthor" routerLinkActive="active-link">
+                Volver
+            </button>
+        </div>
+        <div class="buttonAddContainer">
+            <button class="retButton" (click)="regBook()">
+                Add book!
+            </button>
+        </div>
+    </div>
+</div>
