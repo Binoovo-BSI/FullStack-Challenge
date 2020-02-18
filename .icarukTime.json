@@ -1,16 +1,16 @@
 {
-    "idleHeartbeats": 5226,
-    "navigatingHeartbeats": 2266,
-    "totalCodingHeartbeats": 9827,
+    "idleHeartbeats": 5624,
+    "navigatingHeartbeats": 2482,
+    "totalCodingHeartbeats": 10891,
     "languageHeartbeats": {
         "json": 29,
         "ignore": 1,
-        "javascript": 4651,
-        "typescript": 2885,
+        "javascript": 5096,
+        "typescript": 2971,
         "http": 773,
-        "plaintext": 73,
-        "scss": 734,
-        "html": 681
+        "plaintext": 103,
+        "scss": 970,
+        "html": 948
     },
     "fileHeartbeats": {
         "fullstack-b/package.json": 29,
@@ -26,7 +26,7 @@
         "fullstack-b/interfaces/interfaces.ts": 180,
         "fullstack-b/models/Book.ts": 129,
         "fullstack-b/interfaces/IBook.ts": 154,
-        "fullstack-b/DB/db_book.js": 783,
+        "fullstack-b/DB/db_book.js": 1214,
         "fullstack-b/routes/rt_author.js": 465,
         "fullstack-b/DB/db_authors.js": 40,
         "fullstack-b/DB/db_author.js": 1098,
@@ -35,19 +35,21 @@
         "fullstack-b/models/author.ts": 56,
         "fullstack-b/DB/db_author.ts": 47,
         "fullstack-b/models/author.js": 60,
-        "fullstack-b/models/library.js": 434,
+        "fullstack-b/models/library.js": 448,
         "fullstack-b/test.rest": 773,
-        "scm\\git\\scm0\\input": 73,
+        "scm\\git\\scm0\\input": 103,
         "fullstack-f/src/styles.scss": 57,
         "fullstack-f/src/app/app.component.html": 31,
         "fullstack-f/src/app/app.module.ts": 319,
-        "fullstack-f/src/app/app-routing.module.ts": 191,
-        "fullstack-f/src/app/components/book-display/book-display.component.html": 391,
+        "fullstack-f/src/app/app-routing.module.ts": 255,
+        "fullstack-f/src/app/components/book-display/book-display.component.html": 457,
         "fullstack-f/src/app/services/book.service.ts": 354,
         "fullstack-f/src/app/components/book-display/book-display.component.ts": 127,
-        "fullstack-f/src/app/components/book-detail/book-detail.component.ts": 100,
-        "fullstack-f/src/app/components/book-detail/book-detail.component.html": 259,
+        "fullstack-f/src/app/components/book-detail/book-detail.component.ts": 122,
+        "fullstack-f/src/app/components/book-detail/book-detail.component.html": 300,
         "fullstack-f/src/app/components/book-detail/book-detail.component.scss": 264,
-        "fullstack-f/src/app/components/book-display/book-display.component.scss": 413
+        "fullstack-f/src/app/components/book-display/book-display.component.scss": 530,
+        "fullstack-f/src/app/components/add-author/add-author.component.html": 160,
+        "fullstack-f/src/app/components/add-author/add-author.component.scss": 119
     }
 }

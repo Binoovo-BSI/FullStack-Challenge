@@ -2,10 +2,80 @@ const { BookModel } = require("../models/library");
 
 const allBooks = async (req, res) => {
 
-	BookModel.find(
-		{}
-	).then( (books) => {
-		res.send(books);
+	// BookModel.find(
+	// 	{}
+	// ).then( (books) => {
+	// 	res.send(books);
+	// }).catch( (err) => {
+	// 	console.log( err );
+	// });
+
+	// ----------------
+	// Genero el array del AGGREGATE
+	// ----------------
+	
+	let arrAggregate = [];
+	
+	arrAggregate = [
+		
+		...arrAggregate,
+		
+		
+		// { $sort: stage_sort },
+		// { $skip: stage_skip },
+		// { $match: stage_match },
+		// { $limit: stage_limit },
+		
+		{ $lookup:
+			{
+				from: "authors",
+				localField: "author_Id",
+				foreignField: "_id",
+				as: "__authorfirstName"
+			}
+		},
+		{ $unwind: "$__authorfirstName"},
+		{ $addFields: {
+				_authorfirstName: "$__authorfirstName.firstName"
+			}
+		},
+		
+		{ $lookup:
+			{
+				from: "authors",
+				localField: "author_Id",
+				foreignField: "_id",
+				as: "__authorlastName"
+			}
+		},
+		{ $unwind: "$__authorlastName"},
+		{ $addFields: {
+				_authorlastName: "$__authorlastName.lastName"
+			}
+		},
+		
+		{ $project:
+			{
+				__authorfirstName: 0,
+				__authorlastName: 0
+			}
+		}
+		
+	];
+	
+	
+	// ----------------
+	// Finalizo
+	// ----------------
+	
+	BookModel.aggregate(arrAggregate).then( (books) => {
+		
+		if (books) {
+			res.send(books);
+		} else {
+			res.send({message: `Books not found.`});
+		}
+		
 	}).catch( (err) => {
 		console.log( err );
 	});

@@ -7,6 +7,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BookDetailComponent } from './components/book-detail/book-detail.component';
 import { AddBookComponent } from './components/add-book/add-book.component';
+import { AddAuthorComponent } from './components/add-author/add-author.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { AddBookComponent } from './components/add-book/add-book.component';
     AppComponent,
     BookDetailComponent,
     BookDisplayComponent,
-    AddBookComponent
+    AddBookComponent,
+    AddAuthorComponent
   ],
   imports: [
     BrowserModule,

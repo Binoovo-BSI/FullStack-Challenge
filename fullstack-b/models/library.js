@@ -23,12 +23,6 @@ const BookSchema = mongoose.Schema({
 	},
 	author_Id : {
 		type: ObjectId
-	},
-	author_Name: {
-		type: String
-	},
-	author_Surname: {
-		type: String
 	}
 	
 });
