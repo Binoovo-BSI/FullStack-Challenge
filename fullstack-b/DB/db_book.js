@@ -2,14 +2,6 @@ const { BookModel } = require("../models/library");
 
 const allBooks = async (req, res) => {
 
-	// BookModel.find(
-	// 	{}
-	// ).then( (books) => {
-	// 	res.send(books);
-	// }).catch( (err) => {
-	// 	console.log( err );
-	// });
-
 	// ----------------
 	// Genero el array del AGGREGATE
 	// ----------------
@@ -20,11 +12,6 @@ const allBooks = async (req, res) => {
 		
 		...arrAggregate,
 		
-		
-		// { $sort: stage_sort },
-		// { $skip: stage_skip },
-		// { $match: stage_match },
-		// { $limit: stage_limit },
 		
 		{ $lookup:
 			{
@@ -96,6 +83,19 @@ const getById = async (req, res) => {
     
 };
 
+const getByTitle = async (req, res) => {
+
+	let title = req.params.title;
+	
+
+    BookModel.find({ $and: [{"name" : {$regex : `.*${title}.*`, $options: 'i'}}]}).limit(20).then( (books) => {
+		res.send(books);
+	}).catch( (err) => {
+		console.log( err );
+    });
+    
+};
+
 const addBook = async (req, res) => {
 
 	try {
@@ -142,5 +142,6 @@ const addBook = async (req, res) => {
 module.exports = {
 	allBooks,
 	getById,
-	addBook
+	addBook,
+	getByTitle
 };
