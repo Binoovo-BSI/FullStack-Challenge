@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthorService } from 'src/app/services/author.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-add-author',
@@ -7,8 +8,13 @@ import { AuthorService } from 'src/app/services/author.service';
   styleUrls: ['./add-author.component.scss']
 })
 export class AddAuthorComponent implements OnInit {
+  authorRegist = {
+    firstName: '',
+    lastName: ''
+  };
 
-  constructor(private authorService:AuthorService) { }
+  constructor(private authorService:AuthorService, private router:Router) { }
+
 
   ngOnInit() {
 
@@ -20,6 +26,26 @@ export class AddAuthorComponent implements OnInit {
 
     )
 
+  }
+
+  sendRegis(){
+    
+    this.authorService.regAuthor(this.authorRegist)
+    .subscribe(
+      
+      (res) => { 
+
+        
+          
+          
+          setTimeout(() => {
+            this.router.navigate(['/'])
+          }, 1000);
+        
+      },
+      error=>console.log(error)
+
+    )
   }
 
 }

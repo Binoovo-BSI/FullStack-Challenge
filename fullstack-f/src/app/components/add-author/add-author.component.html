@@ -4,10 +4,10 @@
         {{author.firstName}} {{author.lastName}}
     </div>
     <div class="authorName">
-        <p>Name: </p><input/>
+        <p>Name: </p><input type="text" class="input" [(ngModel)] = "authorRegist.firstName" [ngModelOptions] = "{standalone: true }"/>
     </div>
     <div class="authorSurname">
-        <p>Surname: </p><input/>
+        <p>Surname: </p><input type="text" class="input" [(ngModel)] = "authorRegist.lastName" [ngModelOptions] = "{standalone: true }"/>
     </div>
     <div class="buttons">
         <div class="buttonAddContainer">
@@ -16,7 +16,7 @@
             </button>
         </div>
         <div class="buttonAddContainer">
-            <button class="addButton">
+            <button class="addButton" (click)="sendRegis()">
                 Submit
             </button>
         </div>

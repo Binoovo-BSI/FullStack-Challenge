@@ -37,4 +37,9 @@ export class AuthorService {
       return;
    }
 
+   regAuthor(regis_d:any):Observable<any>{
+    
+      return this.httpClient.post(this.url + `add`, regis_d);
+    }
+
   }

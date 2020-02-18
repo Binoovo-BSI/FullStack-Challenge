@@ -9,6 +9,7 @@ import { BookDetailComponent } from './components/book-detail/book-detail.compon
 import { AddBookComponent } from './components/add-book/add-book.component';
 import { AddAuthorComponent } from './components/add-author/add-author.component';
 import { AuthorDetailComponent } from './components/author-detail/author-detail.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { AuthorDetailComponent } from './components/author-detail/author-detail.
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    FormsModule
     
   ],
   providers: [],
