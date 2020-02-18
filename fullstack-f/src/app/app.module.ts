@@ -8,6 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BookDetailComponent } from './components/book-detail/book-detail.component';
 import { AddBookComponent } from './components/add-book/add-book.component';
 import { AddAuthorComponent } from './components/add-author/add-author.component';
+import { AuthorDetailComponent } from './components/author-detail/author-detail.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { AddAuthorComponent } from './components/add-author/add-author.component
     BookDetailComponent,
     BookDisplayComponent,
     AddBookComponent,
-    AddAuthorComponent
+    AddAuthorComponent,
+    AuthorDetailComponent
   ],
   imports: [
     BrowserModule,
